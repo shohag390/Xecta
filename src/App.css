@@ -1,0 +1,54 @@
+.card:hover .image {
+  transform: scale(1.2);
+}
+.card .contant {
+  transform: scale(0);
+}
+.card:hover .contant {
+  height: 100%;
+  width: 100%;
+  opacity: 70%;
+  transform: scale(1.2);
+}
+
+.client_section {
+  background-image: url(../src/assets/testimonial-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bottom_scroll {
+  animation: bottom linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.animation_arrow {
+  animation: animate 1s infinite alternate-reverse;
+  box-shadow: 0px 0px 2px #ffffff;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid #002570 !important;
+  opacity: 100% !important;
+  background: #fff !important;
+  border-radius: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e63d53 !important;
+  border: none !important;
+}
